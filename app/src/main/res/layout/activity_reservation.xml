@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activities.Reservation">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="510dp">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/view10"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/hms" />
+
+            <EditText
+                android:id="@+id/txt_PricePerDay"
+                style="@style/profileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/view5"
+                android:layout_below="@+id/view5"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                android:hint="Price Per Day "
+                android:inputType="number"
+                android:lines="1"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/txt_Total"
+                style="@style/profileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txt_PricePerWeek"
+                android:layout_below="@+id/view4"
+                android:background="#FFFFFF"
+                android:enabled="false"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Total Price:  "
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_EndDate"
+                style="@style/profileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/view9"
+                android:layout_below="@+id/view6"
+                android:layout_marginTop="18dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:hint="End Date"
+                android:lines="1"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/txt_Email14"
+                style="@style/profileEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/spinner_HallNo"
+                android:layout_marginStart="17dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Select Hall" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignStart="@+id/txt_Email14"
+                android:layout_below="@+id/spinner_HallNo"
+                android:background="#4b000000" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignStart="@+id/txt_Facilities"
+                android:layout_below="@+id/txt_Facilities"
+                android:background="#4b000000" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txt_PricePerWeek"
+                android:background="#4b000000" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignStart="@+id/txt_PricePerDay"
+                android:layout_below="@+id/txt_PricePerDay"
+                android:background="#4b000000" />
+
+            <EditText
+                android:id="@+id/txt_Facilities"
+                style="@style/profileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txt_Email14"
+                android:layout_below="@+id/txt_Email14"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:hint="Start Date"
+                android:lines="1"
+                android:maxLines="1" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignBottom="@+id/txt_EndDate"
+                android:layout_alignStart="@+id/txt_Facilities"
+                android:background="#4b000000" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignStart="@+id/view9"
+                android:layout_below="@+id/view9"
+                android:background="#4b000000" />
+
+            <EditText
+                android:id="@+id/txt_PricePerWeek"
+                style="@style/profileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/view7"
+                android:layout_below="@+id/view7"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                android:hint="Price Per Week"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLines="1" />
+
+            <Spinner
+                android:id="@+id/spinner_HallNo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/scrollView2"
+                android:layout_marginTop="180dp"
+                android:layout_toEndOf="@+id/txt_Email14"
+                tools:ignore="NotSibling" />
+
+            <Button
+                android:id="@+id/btn_reservation"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/roundcorner_button"
+                android:drawablePadding="-15sp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:elevation="15dp"
+                android:paddingRight="16dp"
+                android:text="RESERVATION"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "456685933372",
+    "firebase_url": "https://hall-reservation-management.firebaseio.com",
+    "project_id": "hall-reservation-management",
+    "storage_bucket": "hall-reservation-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456685933372:android:17b1a06d0f0f6a63",
+        "android_client_info": {
+          "package_name": "com.smrtsols.www.hall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456685933372-4ds1mskjh6sbe2tis4h8gn9bg8e162u8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smrtsols.www.hall",
+            "certificate_hash": "4f9777bbf461879f99b7a104b5b4cb0c691bb19a"
+          }
+        },
+        {
+          "client_id": "456685933372-5p37houiqdncblf99e9pjp4kf7m6ksup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTOuzCLTAlrC2wKj7AoveYTZOgAi87Imo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456685933372-5p37houiqdncblf99e9pjp4kf7m6ksup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
